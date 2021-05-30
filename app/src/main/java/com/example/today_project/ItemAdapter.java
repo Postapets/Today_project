@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,17 +42,12 @@ public final class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHo
         View view = LayoutInflater.from(context).inflate(R.layout.items, parent, false);
         return new MyViewHolder(view);
 
-//        return new RecyclerView.ViewHolder(
-//                LayoutInflater.from(parent.getContext())
-//                        .inflate(R.layout.items, parent, false)
-//        ) {};
     }
 
     //при присоединении viewholder к активности выводим данные внесенные пользователем
     @Override
     public void onBindViewHolder(@NonNull ItemAdapter.MyViewHolder holder, int index) {
 
-        //не факт, что здесь надо писать this
         Item item = this.itemList.get(index);
 
         //вешаем событие на view, которое получили в onCreateViewHolder
@@ -67,18 +63,13 @@ public final class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHo
                 }
         );
 
+        if (Store.getStore().sizeChecked()==0){
+            holder.itemChecked.setChecked(false);
+        }
 
 
         holder.name.setText(item.getName());
       //  holder.created.setText(format(item.getCreated()));
-
-//        TextView name = holder.itemView.findViewById(R.id.name);
-//        TextView created = holder.itemView.findViewById(R.id.created);
-//        CheckBox itemChecked = holder.itemView.findViewById(R.id.checked);
-//        TextView timeDuration = holder.itemView.findViewById(R.id.timeDuration);
-//        Item item = Store.getStore().get(index);
-//        name.setText(String.format("%s %s", index+1, item.getName()));
-//        created.setText(format(item.getCreated()));
 
         //редактируем массив отмеченных элементов
         holder.itemChecked.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -89,6 +80,7 @@ public final class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHo
                     Store.getStore().addChecked(itemId);
                 } else {
                     if (Store.getStore().getAllChecked().contains(itemId)){ Store.getStore().removeChecked(itemId); }
+
                 }
             }
         });
@@ -109,11 +101,6 @@ public final class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHo
 
     @Override
     public int getItemCount() { return this.itemList.size(); }
-
-    //    @Override
-//    public int getItemCount() {
-//        return Store.getStore().size();
-//    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView name;

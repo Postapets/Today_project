@@ -53,13 +53,6 @@ public class AddActivity extends AppCompatActivity {
                 editSeconds,
                 Calendar.getInstance()));
 
-//        Store.getStore().add(
-//                new Item(edit.getText().toString(),
-//                        editDesc.getText().toString() ,
-//                        editSeconds,
-//                        Calendar.getInstance()));
-
-        Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }

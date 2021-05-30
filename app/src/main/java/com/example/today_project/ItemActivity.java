@@ -32,7 +32,6 @@ public class ItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_details);
         Item item = (Item) getIntent().getSerializableExtra("item");
-//        Item item = Store.getStore().get(index);
 
         name = findViewById(R.id.name);
         name.setText(item.getName());
@@ -120,7 +119,6 @@ public class ItemActivity extends AppCompatActivity {
         item.setTimeAmount(editSeconds);
         AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
         db.itemDao().update(item);
-        //Store.getStore().change(index, item);
         Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
         startActivity(intent);
     }
@@ -128,7 +126,6 @@ public class ItemActivity extends AppCompatActivity {
     private void deleteItem(Item item) {
         AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
         db.itemDao().delete(item);
-        //Store.getStore().remove(index);
         Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
         startActivity(intent);
     }

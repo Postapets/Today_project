@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.today_project.storage.Store;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -43,6 +45,10 @@ public class TimerActivity extends AppCompatActivity {
 
         itemNames = (ArrayList<String>) arguments.get("itemsNames");
         itemTimes = (ArrayList<Long>) arguments.get("itemsTime");
+
+        for (int i=0;i< Store.getStore().sizeChecked();i++) {
+            Toast.makeText(this, String.format("checkedItems id: %d",Store.getStore().getChecked(i)), Toast.LENGTH_SHORT).show();
+        }
         newTimer= new ItemCountDownTimer(itemTimes.get(0), 1000);
         newTimer.start();
 
@@ -122,7 +128,7 @@ public class TimerActivity extends AppCompatActivity {
     private void setNewTimer(){
         if (checkItemsLeft()){
             String currentName = itemNames.get(0);
-            long currentTime = itemTimes.get(0);
+            currentTime = itemTimes.get(0);
             removeUsedItem();
             startTimer(currentName, currentTime);
         }
@@ -147,8 +153,8 @@ public class TimerActivity extends AppCompatActivity {
     public class ItemCountDownTimer extends CountDownTimer {
         double progressBarCoef = progressBar.getMax() / (double) itemTimeSum;
 
-        public ItemCountDownTimer(long timeLeft, long countDownInterval) {
-            super(timeLeft, countDownInterval);
+        public ItemCountDownTimer(long timeLeftInMillies, long countDownInterval) {
+            super(timeLeftInMillies, countDownInterval);
         }
 
         @Override

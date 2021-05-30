@@ -28,10 +28,10 @@
                 android:layout_height="87dp"
                 android:fontFamily="@font/alegreya_bold"
                 android:gravity="center_vertical"
-                android:text="@string/welcome_main"
+                android:text="@string/welcome"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="32sp"
+                android:textSize="34sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="RtlCompat" />
