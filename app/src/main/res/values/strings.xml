@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Today</string>
+    <string name="welcome">ДОБРО ПОЖАЛОВАТЬ</string>
+    <string name="welcome_description">Фокусируйтесь на задачах.
+        Поддерживайте своё здоровье.
+        Оставайтесь в ресурсе.
+    </string>
+    <string name="no_account">Нет аккаунта? <b><u>Зарегистрируйтесь!</u></b></string>
+    <string name="already_has_account">Уже есть аккаунт? <b><u>Войти</u></b></string>
+    <string name="enter">Войти</string>
+    <string name="entering">Вход</string>
+    <string name="name">Имя</string>
+    <string name="email">Email</string>
+    <string name="pass">Пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="add_button">Добавить</string>
+    <string name="delete_button">Удалить</string>
+    <string name="calendar_button">cal</string>
+    <string name="save_button">Сохранить</string>
+    <string name="task_name">Название</string>
+    <string name="task_annotation">Описание</string>
+    <string name="start_task_button">Начать</string>
+    <string name="welcome_main">Добро пожаловать!</string>
+    <string name="planes_mail">Какие планы на сегодня?</string>
+    <string name="new_task">Новая задача</string>
+    <string name="hours_and_seconds">Часы и минуты</string>
+    <string name="zero_time">00:00</string>
+    <string name="end_timer">Завершить</string>
+    <string name="concentrate">Концентрация</string>
+    <string name="concentrate_hint">Выполняйте задания, пока время не закончилось!</string>
+    <string name="next_timer">Следующая активность</string>
+    <string name="end_timer_text">Время истекло</string>
+    <string name="end_time_text2">Как ваши успехи?</string>
+    <string name="go_to_main_button">Вернуться на главную</string>
+    <string name="timer_interrupted_text">Так быстро?</string>
+    <string name="timer_interrupted_text2">Вы уже все успели?</string>
+    <string name="go_to_next_task">К следующей задаче</string>
+
+
+</resources>

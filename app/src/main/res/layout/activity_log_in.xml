@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context=".initial.Log_in">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="224dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_button"
+        app:srcCompat="@drawable/white_leaves" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="start"
+        android:text="@string/entering"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Email_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/blue_button_selector"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/enter"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/no_account"
+        app:layout_constraintEnd_toEndOf="@+id/password_text"
+        app:layout_constraintStart_toStartOf="@+id/password_text" />
+
+    <TextView
+        android:id="@+id/no_account"
+        android:layout_width="294dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="180dp"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/no_account"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/enter_button"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/enter_button" />
+
+    <EditText
+        android:id="@+id/Email_text"
+        android:layout_width="321dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/dark_rect"
+        android:hint="@string/email"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/password_text"
+        app:layout_constraintStart_toStartOf="@+id/welcome" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="321dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dark_rect"
+        android:hint="@string/pass"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/enter_button"
+        app:layout_constraintStart_toStartOf="@+id/Email_text" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="229dp"
+        android:layout_height="232dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome"
+        app:layout_constraintEnd_toEndOf="@android:id/empty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">@color/common_button</color>
+    <color name="purple_500">@color/common_button</color>
+    <color name="purple_700">@color/common_button</color>
+    <color name="teal_200">@color/common_button</color>
+    <color name="teal_700">@color/common_button</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="common_button">#7C9994</color>
+    <color name="dark_green_button">#516454</color>
+    <color name="grey">#696969</color>
+</resources>

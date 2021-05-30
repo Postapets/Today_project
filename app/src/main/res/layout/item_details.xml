@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/green_background">
+
+
+    <TextView
+        android:id="@+id/new_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:autofillHints=""
+        android:background="@drawable/dark_rect"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="start|top"
+        android:padding="10dp"
+        android:text="@string/new_task"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:gravity="start|top"
+        android:background="@drawable/dark_rect"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/task_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/dark_rect"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="start|top"
+        android:hint="@string/task_annotation"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/time_picker_text"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dark_rect"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="start|top"
+        android:padding="5dp"
+        android:text="@string/hours_and_seconds"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        tools:ignore="RtlCompat" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="173dp"
+        android:layout_height="224dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center|top"
+        android:timePickerMode="spinner" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/dark_green_button_selector"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/save_button" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/dark_green_button_selector"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/delete_button" />
+
+
+</LinearLayout>
+
