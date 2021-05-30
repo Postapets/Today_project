@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/green_background">
+    android:background="@drawable/green_background"
+    tools:context=".TimerActivity">
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
@@ -77,26 +78,9 @@
             android:background="@drawable/dark_green_button_selector"
             android:fontFamily="@font/roboto_regular"
             android:gravity="center"
-            android:onClick="TODO"
             android:text="@string/end_timer"
             android:textColor="@color/white"
-            app:backgroundTint="@null" />
-    <Button
-        android:id="@+id/nextItemTimer"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:background="@drawable/dark_green_button_selector"
-        android:fontFamily="@font/roboto_regular"
-        android:gravity="center"
-        android:onClick="TODO"
-        android:text="@string/end_timer"
-        android:textColor="@color/white"
-        app:backgroundTint="@null" />
-
-
-
-
+            app:backgroundTint="@null"
+            android:onClick="stopTimer"/>
 
 </LinearLayout>

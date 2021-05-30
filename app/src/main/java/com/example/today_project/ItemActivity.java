@@ -98,9 +98,7 @@ public class ItemActivity extends AppCompatActivity {
         Button deleteButton = findViewById(R.id.delete);
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                deleteItem(item);
-            }
+            public void onClick(View view) { deleteItem(item); }
         });
 
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -119,14 +117,16 @@ public class ItemActivity extends AppCompatActivity {
         item.setTimeAmount(editSeconds);
         AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
         db.itemDao().update(item);
-        Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        finish();
+//        Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
+//        startActivity(intent);
     }
 
     private void deleteItem(Item item) {
         AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
         db.itemDao().delete(item);
-        Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        finish();
+//        Intent intent = new Intent(this.getApplicationContext(), MainActivity.class);
+//        startActivity(intent);
     }
 }

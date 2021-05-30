@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         if (Store.getStore().sizeChecked() > 0) {
             Intent intent = new Intent(this.getApplicationContext(), TimerActivity.class);
             startActivity(intent);
+            finish();
         } else{
             Toast.makeText(this, "Задачи не отмечены", Toast.LENGTH_SHORT).show();
         }

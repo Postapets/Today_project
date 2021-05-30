@@ -8,6 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    tools:context=".TimerInterruptActivity"
     android:background="@drawable/green_background">
 
     <LinearLayout
@@ -63,7 +64,7 @@
             android:background="@drawable/dark_green_button_selector"
             app:backgroundTint="@null"
             android:fontFamily="@font/roboto_regular"
-            android:onClick="@TODO"
+            android:onClick="returnMainActivity"
             android:text="@string/go_to_main_button"
             android:textColor="@color/white" />
 
@@ -77,6 +78,7 @@
             app:backgroundTint="@null"
             android:fontFamily="@font/roboto_regular"
             android:text="@string/go_to_next_task"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:onClick="nextTimerStart"/>
     </LinearLayout>
 </LinearLayout>

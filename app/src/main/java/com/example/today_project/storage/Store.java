@@ -21,6 +21,8 @@ public class Store extends AppCompatActivity {
 
     public void addChecked(int itemIndex) { this.checkedItems.add(itemIndex);}
 
+    public void removeByIndex(int index){ this.checkedItems.remove(index); }
+
     public void removeChecked(int itemId) { this.checkedItems.remove((Integer) itemId); }
 
     public void removeAllChecked(){  this.checkedItems.clear();  }

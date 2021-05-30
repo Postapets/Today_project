@@ -23,7 +23,7 @@
     <string name="task_annotation">Описание</string>
     <string name="start_task_button">Начать</string>
     <!-- -->
-    <string name="welcome_main1">Добро пожаловать!</string>
+    <string name="welcome_main">Добро пожаловать!</string>
     <!-- -->
     <string name="planes_mail">Какие планы на сегодня?</string>
     <string name="new_task">Новая задача</string>

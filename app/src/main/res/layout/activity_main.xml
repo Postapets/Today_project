@@ -28,7 +28,7 @@
                 android:layout_height="87dp"
                 android:fontFamily="@font/alegreya_bold"
                 android:gravity="center_vertical"
-                android:text="@string/welcome"
+                android:text="@string/welcome_main"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="34sp"
