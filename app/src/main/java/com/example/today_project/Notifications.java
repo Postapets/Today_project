@@ -1,4 +1,5 @@
 package com.example.today_project;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
@@ -10,27 +11,26 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import static android.telephony.AvailableNetworkInfo.PRIORITY_HIGH;
 
-public class Notification extends AppCompatActivity {
+public class Notifications extends AppCompatActivity {
 
     private NotificationManager notificationManager;
     private static final int NOTIFY_ID = 1;
     private static final String CHANNEL_ID = "CHANNEL_ID";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
         notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
+
     }
 
 
     public void showNotification(View view) {
-        Intent intent = new Intent(getApplicationContext(), Notification.class);
+        Intent intent = new Intent(getApplicationContext(), Notifications.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder notificationBuilder =

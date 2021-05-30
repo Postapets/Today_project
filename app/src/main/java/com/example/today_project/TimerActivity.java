@@ -1,5 +1,6 @@
 package com.example.today_project;
 
+import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -74,6 +75,8 @@ public class TimerActivity extends AppCompatActivity {
 
 
     private void startTimer() {
+
+
         myTimer = new CountDownTimer(itemTime, 1000) {
             double progressBarCoef = progressBar.getMax() / ((double) itemTime / 1000);
             @Override
@@ -89,6 +92,8 @@ public class TimerActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 endItemTimer();
+//                Notifications notification = new Notifications();
+//                 notification.showNotification();
                 finish();
             }
         }.start();

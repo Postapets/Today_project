@@ -31,7 +31,7 @@
                 android:text="@string/welcome_main"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="34sp"
+                android:textSize="32sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="RtlCompat" />

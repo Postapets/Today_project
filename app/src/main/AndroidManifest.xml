@@ -8,27 +8,30 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/today_launcher_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SecondTry">
-        <activity android:name=".Notification"></activity>
+        android:theme="@style/Theme.Today">
         <activity
             android:name=".initial.SplashScreen"
             android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"/>
         <activity android:name=".AddActivity" />
         <activity android:name=".ItemActivity" />
-        <activity android:name=".TimerActivity" />
-        <activity android:name=".TimerInterruptActivity" />
-        <activity android:name=".TimerEndActivity" />
-        <activity android:name=".initial.Welcome" />
-        <activity android:name=".initial.Log_in" />
-        <activity android:name=".initial.Sign_in" />
-        <activity android:name=".NavigationActivity" />
+        <activity android:name=".TimerActivity"/>
+        <activity android:name=".initial.Welcome"/>
+        <activity android:name=".initial.Log_in"/>
+        <activity android:name=".initial.Sign_in"/>
+        <activity android:name=".NavigationActivity"/>
+        <activity android:name=".TimerInterruptActivity"/>
+        <activity android:name=".TimerEndActivity"/>
+        <activity android:name=".Notifications">
+            </activity>
+
+
     </application>
 
 </manifest>

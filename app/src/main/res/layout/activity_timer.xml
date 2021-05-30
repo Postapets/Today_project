@@ -33,17 +33,17 @@
 
     <TextView
         android:id="@+id/timerText"
-        android:layout_width="238dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:fontFamily="@font/roboto_bold"
         android:background="@drawable/dark_rect"
+        android:fontFamily="@font/roboto_bold"
         android:gravity="center"
         android:hint="@string/zero_time"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="80sp"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,7 +51,7 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
-        android:layout_height="366dp"
+        android:layout_height="317dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"

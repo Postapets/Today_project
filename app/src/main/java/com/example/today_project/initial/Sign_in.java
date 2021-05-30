@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.today_project.MainActivity;
 import com.example.today_project.NavigationActivity;
 import com.example.today_project.R;
 
@@ -22,7 +23,7 @@ public class Sign_in extends AppCompatActivity {
         button=(Button) findViewById(R.id.enter_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View view) {
-                Intent intent = new Intent(Sign_in.this, NavigationActivity.class);
+                Intent intent = new Intent(Sign_in.this, MainActivity.class);
                 startActivity(intent);
 
             }
